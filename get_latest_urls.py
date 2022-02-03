@@ -5,6 +5,12 @@ import re
 # from datetime import datetime
 import datetime
 import dateutil.parser as dparser
+import glob
+import os
+
+def get_latest_file(prefix):
+    list_of_files = sorted(glob.glob("urls_"+prefix+"/*" )) # * means all if need specific format then *.csv
+    return list_of_files[-1]
 
 def url_to_soup(url):
     r = requests.get(url)
@@ -44,18 +50,18 @@ def get_href(linkParent, prefix):
     else:  # LW
         return linkParent.get('href')
 
+#Change File Prefix and you're good to go!
+# file_prefix = "ea"
+file_prefix = "lw"
 
-file_prefix = "ea"
-# file_prefix = "lw"
-
-today = datetime.datetime.today().strftime("%b_%d_%Y")
-with open("urls/links_"+file_prefix+".txt") as previous_file:
+latest_file_name = get_latest_file(file_prefix)
+with open(latest_file_name) as previous_file:
     latest_url = previous_file.readline().rstrip()
-f = open("urls/"+today + "_links_"+file_prefix+".txt", "w")
+today = datetime.datetime.today().strftime("%Y-%m-%d")
+f = open("urls_"+file_prefix+"/"+today + "_links_"+file_prefix+".txt", "w")
 
 if file_prefix == "ea":
-    today_year_month_day = datetime.datetime.today().strftime("%Y-%m-%d")
-    initial_url = "https://forum.effectivealtruism.org/allPosts?after="+subtract_one_day(today_year_month_day)+"&before="+today_year_month_day+"&limit=100"
+    initial_url = "https://forum.effectivealtruism.org/allPosts?after="+subtract_one_day(today)+"&before="+today+"&limit=100"
 else: #LW
     initial_url = "https://www.greaterwrong.com/index?view=all&offset=0"
 iterations = 0
@@ -65,6 +71,7 @@ while not found_latest_url:
     if(iterations % 100 == 0):
         print("Currently: ", iterations)
     try:
+        #Find All Post Title tags for each page, then the url for the post
         soup = url_to_soup(initial_url)
         posts = find_post_title_root(file_prefix)
         for linkParent in posts:

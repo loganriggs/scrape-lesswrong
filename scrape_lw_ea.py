@@ -81,17 +81,19 @@ def encode_html_as_text(soup):
     return #insert is in-place, no need to return soup
 
 #Initialization and Configuration
-file_prefix = "ea"
+file_prefix = "ea" #
 # file_prefix = "lw"
 
 if file_prefix == "ea":
     url_link_prefix = "https://forum.effectivealtruism.org"
 else: #lesswrong
     url_link_prefix = "https://www.lesswrong.com"
-today = datetime.today().strftime("%b_%d_%Y")
+today = datetime.today().strftime("%Y-%m-%d")
 comment_context_array = np.empty(shape=(0,2), dtype=object)
 
-with open("links_"+file_prefix+".txt", "r") as file:
+url_date = "2022-02-03"
+url_filename = "urls_"+file_prefix+"/"+url_date+"_links_"+file_prefix+".txt"
+with open(url_filename, "r") as file:
     count = 0
     for url_link in file:
         try:

@@ -5,7 +5,7 @@
 ## get_latest_urls.py
 Will grab the latest urls for both lw & ea (change the variable file_prefix to switch between the two as shown below)
 ```
-file_prefix = ea #or lw
+file_prefix = "ea" #or "lw"
 ```
 ## scrape_lw_ea.py 
 Scrapes the posts/comments from whatever url_file you want. Again change the file_prefix variable to switch between lesswrong and ea forum. 

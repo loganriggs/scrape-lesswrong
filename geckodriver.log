@@ -1,0 +1,254 @@
+1644260774763	geckodriver	INFO	Listening on 127.0.0.1:58709
+1644260775785	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile0gwvDt"
+1644260777729	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile0gwvDt/search.json.mozlz4", (void 0)))
+1644260783539	Marionette	INFO	Listening on port 34389
+1644260783734	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.lesswrong.com/js/bundle.js?hash=c1f1538995effab4f347421eab4133612cdc62d19e4624315c4ee7df96cad928, line 31: unreachable code after return statement
+Exiting due to channel error.
+Exiting due to channel error.
+1644262007149	geckodriver	INFO	Listening on 127.0.0.1:42479
+1644262008155	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileeDfivJ"
+1644262009722	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileeDfivJ/search.json.mozlz4", (void 0)))
+1644262013291	Marionette	INFO	Listening on port 34453
+1644262013390	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.lesswrong.com/js/bundle.js?hash=c1f1538995effab4f347421eab4133612cdc62d19e4624315c4ee7df96cad928, line 31: unreachable code after return statement
+
+(firefox:19756): GLib-GObject-WARNING **: 14:27:34.825: ../../../../gobject/gsignal.c:3493: signal name 'load_complete' is invalid for instance '0x7f107f984420' of type 'MaiAtkType139'
+
+(firefox:19756): GLib-GObject-WARNING **: 14:27:34.826: ../../../../gobject/gsignal.c:3493: signal name 'load_complete' is invalid for instance '0x7f107f984a10' of type 'MaiAtkType139'
+Exiting due to channel error.
+Exiting due to channel error.
+1644262156450	geckodriver	INFO	Listening on 127.0.0.1:55825
+1644262157474	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileAn3RCB"
+1644262158944	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileAn3RCB/search.json.mozlz4", (void 0)))
+1644262161627	Marionette	INFO	Listening on port 46233
+1644262161726	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.lesswrong.com/js/bundle.js?hash=c1f1538995effab4f347421eab4133612cdc62d19e4624315c4ee7df96cad928, line 31: unreachable code after return statement
+Exiting due to channel error.
+Exiting due to channel error.
+1644262265327	geckodriver	INFO	Listening on 127.0.0.1:35899
+1644262266338	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile3uSVF8"
+1644262267735	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile3uSVF8/search.json.mozlz4", (void 0)))
+1644262270519	Marionette	INFO	Listening on port 39805
+1644262270613	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.lesswrong.com/js/bundle.js?hash=c1f1538995effab4f347421eab4133612cdc62d19e4624315c4ee7df96cad928, line 31: unreachable code after return statement
+Exiting due to channel error.
+Exiting due to channel error.
+1644262319816	geckodriver	INFO	Listening on 127.0.0.1:59103
+1644262319825	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilefEfstR"
+1644262320807	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilefEfstR/search.json.mozlz4", (void 0)))
+1644262322591	Marionette	INFO	Listening on port 42617
+1644262322661	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.lesswrong.com/js/bundle.js?hash=c1f1538995effab4f347421eab4133612cdc62d19e4624315c4ee7df96cad928, line 31: unreachable code after return statement
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1644262377239	geckodriver	INFO	Listening on 127.0.0.1:54631
+1644262377246	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileYlnDwG"
+1644262378173	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileYlnDwG/search.json.mozlz4", (void 0)))
+1644262380037	Marionette	INFO	Listening on port 37267
+1644262380108	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.lesswrong.com/js/bundle.js?hash=c1f1538995effab4f347421eab4133612cdc62d19e4624315c4ee7df96cad928, line 31: unreachable code after return statement
+Exiting due to channel error.
+Exiting due to channel error.
+1644262466565	geckodriver	INFO	Listening on 127.0.0.1:40043
+1644262466572	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileakBVr8"
+1644262467505	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileakBVr8/search.json.mozlz4", (void 0)))
+1644262469466	Marionette	INFO	Listening on port 38777
+1644262469516	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.lesswrong.com/js/bundle.js?hash=c1f1538995effab4f347421eab4133612cdc62d19e4624315c4ee7df96cad928, line 31: unreachable code after return statement
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1644262521456	geckodriver	INFO	Listening on 127.0.0.1:50639
+1644262521461	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilezXNCeW"
+1644262522341	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilezXNCeW/search.json.mozlz4", (void 0)))
+1644262524152	Marionette	INFO	Listening on port 44085
+1644262524211	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.lesswrong.com/js/bundle.js?hash=c1f1538995effab4f347421eab4133612cdc62d19e4624315c4ee7df96cad928, line 31: unreachable code after return statement
+1644262572630	Marionette	INFO	Stopped listening on port 44085
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1644262595704	geckodriver	INFO	Listening on 127.0.0.1:37665
+1644262595710	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileVimdt3"
+1644262596596	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileVimdt3/search.json.mozlz4", (void 0)))
+1644262598865	Marionette	INFO	Listening on port 32877
+1644262598941	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.lesswrong.com/js/bundle.js?hash=c1f1538995effab4f347421eab4133612cdc62d19e4624315c4ee7df96cad928, line 31: unreachable code after return statement
+
+(firefox:22022): GLib-GObject-WARNING **: 14:37:09.103: ../../../../gobject/gsignal.c:3493: signal name 'load_complete' is invalid for instance '0x7fe358af6880' of type 'MaiAtkType139'
+
+(firefox:22022): GLib-GObject-WARNING **: 14:37:09.103: ../../../../gobject/gsignal.c:3493: signal name 'load_complete' is invalid for instance '0x7fe358af6060' of type 'MaiAtkType139'
+Exiting due to channel error.
+Exiting due to channel error.
+1644262774049	geckodriver	INFO	Listening on 127.0.0.1:53007
+1644262774058	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileJ57N8H"
+1644262775436	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileJ57N8H/search.json.mozlz4", (void 0)))
+1644262777760	Marionette	INFO	Listening on port 33811
+1644262777809	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.lesswrong.com/js/bundle.js?hash=c1f1538995effab4f347421eab4133612cdc62d19e4624315c4ee7df96cad928, line 31: unreachable code after return statement
+
+(firefox:22456): GLib-GObject-WARNING **: 14:41:58.276: ../../../../gobject/gsignal.c:3493: signal name 'load_complete' is invalid for instance '0x7f76c00eb100' of type 'MaiAtkType139'
+
+(firefox:22456): GLib-GObject-WARNING **: 14:41:58.276: ../../../../gobject/gsignal.c:3493: signal name 'load_complete' is invalid for instance '0x7f76c00eb150' of type 'MaiAtkType139'
+Exiting due to channel error.
+Exiting due to channel error.
+1644262966294	geckodriver	INFO	Listening on 127.0.0.1:48033
+1644262966305	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilesuqdwK"
+1644262967695	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilesuqdwK/search.json.mozlz4", (void 0)))
+1644262970646	Marionette	INFO	Listening on port 40665
+1644262970736	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.lesswrong.com/js/bundle.js?hash=c1f1538995effab4f347421eab4133612cdc62d19e4624315c4ee7df96cad928, line 31: unreachable code after return statement
+
+(firefox:22898): GLib-GObject-WARNING **: 14:44:37.474: ../../../../gobject/gsignal.c:3493: signal name 'load_complete' is invalid for instance '0x7f7cbf5545b0' of type 'MaiAtkType139'
+
+(firefox:22898): GLib-GObject-WARNING **: 14:44:37.474: ../../../../gobject/gsignal.c:3493: signal name 'load_complete' is invalid for instance '0x7f7cbf554ab0' of type 'MaiAtkType139'
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://www.gstatic.com/recaptcha/releases/1p3YWy80wlZ7Q8QFR1gjazwU/styles__ltr.css without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://fonts.googleapis.com/icon?family=Material+Icons without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://cdn.jsdelivr.net/npm/instantsearch.css@7.0.0/themes/reset-min.css without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://fonts.googleapis.com/css?family=Roboto:300,400,500 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://use.typekit.net/jvr1gjm.css without a browsingContextID set
+Exiting due to channel error.
+Exiting due to channel error.
+1644263431148	geckodriver	INFO	Listening on 127.0.0.1:39489
+1644263431156	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilejuiSlz"
+1644263432381	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilejuiSlz/search.json.mozlz4", (void 0)))
+1644263434887	Marionette	INFO	Listening on port 34597
+1644263434983	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.lesswrong.com/js/bundle.js?hash=c1f1538995effab4f347421eab4133612cdc62d19e4624315c4ee7df96cad928, line 31: unreachable code after return statement
+Exiting due to channel error.
+Exiting due to channel error.
+1644263632856	geckodriver	INFO	Listening on 127.0.0.1:46477
+1644263633868	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile7Zxp2K"
+1644263634986	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile7Zxp2K/search.json.mozlz4", (void 0)))
+1644263637461	Marionette	INFO	Listening on port 39603
+1644263637499	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.lesswrong.com/js/bundle.js?hash=c1f1538995effab4f347421eab4133612cdc62d19e4624315c4ee7df96cad928, line 31: unreachable code after return statement
+
+(firefox:24625): GLib-GObject-WARNING **: 14:54:24.257: ../../../../gobject/gsignal.c:3493: signal name 'load_complete' is invalid for instance '0x7fa55fb766a0' of type 'MaiAtkType139'
+
+(firefox:24625): GLib-GObject-WARNING **: 14:54:24.257: ../../../../gobject/gsignal.c:3493: signal name 'load_complete' is invalid for instance '0x7fa55fb76a60' of type 'MaiAtkType139'
+Exiting due to channel error.
+Exiting due to channel error.
+1644428158450	geckodriver	INFO	Listening on 127.0.0.1:46535
+1644428159473	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilei1frM1"
+1644428160993	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilei1frM1/search.json.mozlz4", (void 0)))
+1644428163461	Marionette	INFO	Listening on port 43723
+1644428163547	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.lesswrong.com/js/bundle.js?hash=e063d0d95427370e9fffa74912c14c12c7d18207ffe42909acbd151a90d1cb4e, line 31: unreachable code after return statement
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1644428208023	geckodriver	INFO	Listening on 127.0.0.1:53533
+1644428208029	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileCXU2nb"
+1644428208942	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileCXU2nb/search.json.mozlz4", (void 0)))
+1644428210546	Marionette	INFO	Listening on port 40501
+1644428210722	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.lesswrong.com/js/bundle.js?hash=e063d0d95427370e9fffa74912c14c12c7d18207ffe42909acbd151a90d1cb4e, line 31: unreachable code after return statement
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1644428306782	geckodriver	INFO	Listening on 127.0.0.1:60741
+1644428306787	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileN7LPgl"
+1644428307843	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileN7LPgl/search.json.mozlz4", (void 0)))
+1644428309599	Marionette	INFO	Listening on port 42057
+1644428309724	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.lesswrong.com/js/bundle.js?hash=e063d0d95427370e9fffa74912c14c12c7d18207ffe42909acbd151a90d1cb4e, line 31: unreachable code after return statement
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://www.lesswrong.com/js/bundle.js?hash=e063d0d95427370e9fffa74912c14c12c7d18207ffe42909acbd151a90d1cb4e, line 31: unreachable code after return statement
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://www.lesswrong.com/js/bundle.js?hash=e063d0d95427370e9fffa74912c14c12c7d18207ffe42909acbd151a90d1cb4e, line 31: unreachable code after return statement
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://www.lesswrong.com/js/bundle.js?hash=e063d0d95427370e9fffa74912c14c12c7d18207ffe42909acbd151a90d1cb4e, line 31: unreachable code after return statement
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1644428356367	geckodriver	INFO	Listening on 127.0.0.1:37773
+1644428356372	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofiletTfxCo"
+1644428357255	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiletTfxCo/search.json.mozlz4", (void 0)))
+1644428359115	Marionette	INFO	Listening on port 41363
+1644428359198	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1644428394292	geckodriver	INFO	Listening on 127.0.0.1:35545
+1644428394297	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileVlcLmD"
+1644428395170	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileVlcLmD/search.json.mozlz4", (void 0)))
+1644428397076	Marionette	INFO	Listening on port 35673
+1644428397401	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1644428414305	geckodriver	INFO	Listening on 127.0.0.1:36553
+1644428414311	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileuDVP64"
+1644428415302	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileuDVP64/search.json.mozlz4", (void 0)))
+1644428418080	Marionette	INFO	Listening on port 34581
+1644428418143	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1644428455299	geckodriver	INFO	Listening on 127.0.0.1:32941
+1644428455305	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileXRkNR4"
+1644428456234	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileXRkNR4/search.json.mozlz4", (void 0)))
+1644428457998	Marionette	INFO	Listening on port 33067
+1644428458057	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.lesswrong.com/js/bundle.js?hash=e063d0d95427370e9fffa74912c14c12c7d18207ffe42909acbd151a90d1cb4e, line 31: unreachable code after return statement
+Exiting due to channel error.
+Exiting due to channel error.
+1644428474818	geckodriver	INFO	Listening on 127.0.0.1:37627
+1644428475828	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilekZdCjb"
+1644428476814	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilekZdCjb/search.json.mozlz4", (void 0)))
+1644428478715	Marionette	INFO	Listening on port 32985
+1644428478806	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.lesswrong.com/js/bundle.js?hash=e063d0d95427370e9fffa74912c14c12c7d18207ffe42909acbd151a90d1cb4e, line 31: unreachable code after return statement
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://www.lesswrong.com/js/bundle.js?hash=e063d0d95427370e9fffa74912c14c12c7d18207ffe42909acbd151a90d1cb4e, line 31: unreachable code after return statement
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://www.lesswrong.com/js/bundle.js?hash=e063d0d95427370e9fffa74912c14c12c7d18207ffe42909acbd151a90d1cb4e, line 31: unreachable code after return statement
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://www.lesswrong.com/js/bundle.js?hash=e063d0d95427370e9fffa74912c14c12c7d18207ffe42909acbd151a90d1cb4e, line 31: unreachable code after return statement
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1644428522454	Marionette	INFO	Stopped listening on port 41363
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1644428524283	Marionette	INFO	Stopped listening on port 35673
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1644428526762	Marionette	INFO	Stopped listening on port 32985
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1644428527966	Marionette	INFO	Stopped listening on port 42057
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

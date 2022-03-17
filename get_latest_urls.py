@@ -51,16 +51,18 @@ def get_href(linkParent, prefix):
         return linkParent.get('href')
 
 #Change File Prefix and you're good to go!
-# file_prefix = "ea"
-file_prefix = "lw"
-
-latest_file_name = get_latest_file(file_prefix)
-with open(latest_file_name) as previous_file:
-    latest_url = previous_file.readline().rstrip()
+# file_prefix = "effective_altruism_forum"
+file_prefix = "lesswrong"
+try:
+    latest_file_name = get_latest_file(file_prefix)
+    with open(latest_file_name) as previous_file:
+        latest_url = previous_file.readline().rstrip()
+except: #empty files
+    latest_url = "n/a"
 today = datetime.datetime.today().strftime("%Y-%m-%d")
 f = open("urls_"+file_prefix+"/"+today + "_links_"+file_prefix+".txt", "w")
 
-if file_prefix == "ea":
+if file_prefix == "effective_altruism_forum":
     initial_url = "https://forum.effectivealtruism.org/allPosts?after="+subtract_one_day(today)+"&before="+today+"&limit=100"
 else: #LW
     initial_url = "https://www.greaterwrong.com/index?view=all&offset=0"
@@ -80,7 +82,7 @@ while not found_latest_url:
                 found_latest_url = True
                 break
             f.write(link+"\n")
-        if file_prefix == "ea":
+        if file_prefix == "effective_altruism_forum":
             initial_url = subtract_days(initial_url)
         else: #LW
             initial_url = add_20_to_url(initial_url)

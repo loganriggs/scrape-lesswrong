@@ -12,6 +12,3 @@ url = "http://a01e-34-66-77-100.ngrok.io"
 r = requests.post(url + '/complete',
                     data=json.dumps({"context":"eleutherai", "top_p": 0.9, "temp": 0.75}),
                     headers={"Content-Type": "application/json"})
-
-#https://api.openai.com/v1/engines/davinci/completions
-#sk-6lbxfDY85nRNKinsN3jJAX5gTIKq1f5RhOiIVCo1

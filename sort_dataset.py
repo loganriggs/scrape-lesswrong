@@ -1,10 +1,73 @@
+from __future__ import print_function
+
 import numpy as np
 import json
 import matplotlib.pyplot as plt
+from dateutil import parser
+from sys import getsizeof, stderr
+from itertools import chain
+from collections import deque
+import ftfy
+try:
+    from reprlib import repr
+except ImportError:
+    pass
 
-with open('scrapes/2022-02-17_lesswrong_scrape.json') as json_file:
+# filename = 'scrapes/test_6990_lesswrong_scrape.json'
+filename = 'arxiv/arxiv_dict_updated.json'
+with open(filename) as json_file:
     data = json.load(json_file)
     #print(data)
+
+keys = [k for k,v in data.items()]
+ten_values = [data[k] for k in keys[:10]]
+one = ten_values[0]
+print(ftfy.fix_text(one["abstract"]))
+
+for k,v in data.items():
+    data[k]["abstract"] = data[k]["abstract"].replace("\n", " ")
+
+#Abstract needs a .replace("\n", " ")
+
+def total_size(o, handlers={}, verbose=False):
+    """ Returns the approximate memory footprint an object and all of its contents.
+
+    Automatically finds the contents of the following builtin containers and
+    their subclasses:  tuple, list, deque, dict, set and frozenset.
+    To search other containers, add handlers to iterate over their contents:
+
+        handlers = {SomeContainerClass: iter,
+                    OtherContainerClass: OtherContainerClass.get_elements}
+
+    """
+    dict_handler = lambda d: chain.from_iterable(d.items())
+    all_handlers = {tuple: iter,
+                    list: iter,
+                    deque: iter,
+                    dict: dict_handler,
+                    set: iter,
+                    frozenset: iter,
+                   }
+    all_handlers.update(handlers)     # user handlers take precedence
+    seen = set()                      # track which object id's have already been seen
+    default_size = getsizeof(0)       # estimate sizeof object without __sizeof__
+
+    def sizeof(o):
+        if id(o) in seen:       # do not double count the same object
+            return 0
+        seen.add(id(o))
+        s = getsizeof(o, default_size)
+
+        if verbose:
+            print(s, type(o), repr(o), file=stderr)
+
+        for typ, handler in all_handlers.items():
+            if isinstance(o, typ):
+                s += sum(map(sizeof, handler(o)))
+                break
+        return s
+
+    return sizeof(o)
 
 def recursive_comment_incrementer(comment, number_of_comments):
     for comment in comment['comments']:
@@ -19,7 +82,7 @@ def get_number_of_comments(post):
 
 def formatted_text(post, format="post"):
     if format == "post":
-        return "{} {} {} {}".format(post["post_title"], post["author"], post["score"], post["text"])
+        return "{} {} {} {}".format(post["title"], post["author"], post["score"], post["text"])
     elif format == "comment":
         return "{} {} {}".format(post["author"], post["score"], post["text"])
 
@@ -47,25 +110,55 @@ def conditional_format(post):
         return [post_text]
 
 
+# i = 0
 # for post in data:
+#     i +=1
+#     if (i>10):
+#         break
 #     format = conditional_format(post)
 #     print("Next Post....")
 #     for x in range(len(format)):
 #         print("\n --- doc ", x, " ---")
 #         print(format[x])
 
-
-
-# cross_posts = [post for post in data if ("crossposted" in post["text"].lower() or "linkpost" in post["text"].lower() or "crosspost" in post["post_title"].lower() or "linkpost" in post["post_title"].lower())]
-# authors = [cp["author"] for cp in cross_posts]
-# uniq, counts = np.unique(authors, return_counts=True)
-
 def get_url_of_dup(dup_string):
-    print("=================================================================")
-    print(dup_string)
     return [[post["url"], post["date"] ]for post in data if dup_string.lower() in post["text"].lower() or dup_string.lower() in post["post_title"].lower()]
 
 def get_id_from_data(id, data):
     return [post for post in data if post["id"] == id][0]
 
-st_post = get_id_from_data("CeZXDmp8Z363XaM6b", data)
+def convert_to_date(time_string):
+    date = parser.parse(time_string)
+    return date.weekday()*24 + date.hour
+
+def plot_hourly(data, format = "top", n = 20):
+    hours = np.arange(24*7)
+    time_by_score = [[int(convert_to_date(post["date"])), float(post["score"].replace("−", "-"))] for post in data]
+    hourly_time_score = [[] for _ in hours]
+    for hour, score in time_by_score:
+        hourly_time_score[hour].append(score)
+    del time_by_score
+    reduced_time =[np.concatenate((hourly_time_score[i*3], hourly_time_score[i*3+1],hourly_time_score[i*3+2])) for i in range(24*7//3)]
+    hourly_time_score = reduced_time
+    hours = np.arange(24*7//3)
+    plt.clf()
+    if format == "std":
+        avg = np.array([np.average(row) for row in hourly_time_score])
+        std_dev = np.array([np.std(row) for row in hourly_time_score])
+        plt.fill_between(hours, avg-std_dev, avg+std_dev,
+            alpha=0.5, edgecolor='#CC4F1B', facecolor='#FF9848')
+    elif format == "top":
+        hourly_time_score = [get_top_n_percent(n, row) for row in hourly_time_score]
+        avg = np.array([np.average(row) for row in hourly_time_score])
+        max = np.array([np.max(row) for row in hourly_time_score])
+        min = np.array([np.min(row) for row in hourly_time_score])
+        plt.fill_between(hours, min, max,
+                         alpha=0.5, edgecolor='#CC4F1B', facecolor='#FF9848')
+    plt.plot(hours, avg, 'k', color='#CC4F1B')
+    plt.xticks(24/3*np.arange(7), ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"])
+    plt.title(f"Karma Over Time Top {n}%")
+    plt.show()
+
+def get_top_n_percent(n, array):
+    five_percent = round(len(array) * 0.01*n)
+    return sorted(array, reverse=True)[:five_percent]
